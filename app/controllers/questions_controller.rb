@@ -8,11 +8,11 @@ class QuestionsController < ApplicationController
     if ask.present?
 
       if ask.downcase == 'i am going to work'
-        return @answer = 'Great!'
+        @answer = 'Great!'
       elsif ask.downcase.end_with?('?')
-        return @answer = 'Silly question, get dressed and go to work!'
+        @answer = 'Silly question, get dressed and go to work!'
       else
-        return @answer = 'I dont care, get dressed and go to work!'
+        @answer = 'I dont care, get dressed and go to work!'
       end
     end
   end
